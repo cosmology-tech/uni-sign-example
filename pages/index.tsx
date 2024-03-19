@@ -44,23 +44,17 @@ export default () => {
       throw new Error("Signer is not instantiated yet");
     }
     const { signature, txRaw } = await signer.sign(messages);
-    console.log(
-      "%cpages/index.tsx:44 signature",
-      "color: #007acc;",
-      signature.toBase64()
-    );
     setSignature(signature.toBase64());
     setTxHash(toHex(signer.config.message.hash(TxRaw.encode(txRaw).finish())));
-  }, [messages]);
+  }, [signer, messages]);
 
   const broadcast = useCallback(async () => {
     if (!signer) {
       throw new Error("Signer is not instantiated yet");
     }
     const resp = await signer.signAndBroadcast(messages);
-    console.log("%cpages/index.tsx:38 resp", "color: #007acc;", resp);
     setResponse(JSON.stringify(resp, undefined, 4));
-  }, [messages]);
+  }, [signer, messages]);
 
   useEffect(() => {
     const offlineSigner = (window as KeplrWindow).keplr!.getOfflineSignerOnlyAmino(
