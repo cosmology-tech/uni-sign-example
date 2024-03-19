@@ -1,0 +1,27 @@
+{
+  "name": "unisign-nextjs",
+  "version": "0.0.1",
+  "description": "unisign example",
+  "main": "index.js",
+  "repository": "git@github.com:cosmology-tech/unisign-nextjs.git",
+  "author": "liujun93 <ljun8575@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@keplr-wallet/types": "^0.12.74",
+    "@uni-sign/cosmos": "^0.0.1",
+    "@uni-sign/cosmos-msgs": "^0.0.1",
+    "@uni-sign/utils": "^0.0.2",
+    "next": "^14.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "^18.2.67",
+    "typescript": "^5.4.2"
+  }
+}
