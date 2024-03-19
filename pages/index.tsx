@@ -92,8 +92,8 @@ export default () => {
       <div>
         <button onClick={sign}>Sign</button>
         <p />
-        <textarea cols={100} rows={2} value={signature} readOnly />
-        <textarea cols={100} rows={4} value={txHash} readOnly />
+        <textarea cols={100} rows={3} value={signature} readOnly />
+        <textarea cols={100} rows={3} value={txHash} readOnly />
       </div>
       <p />
       <div>
