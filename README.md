@@ -1,6 +1,6 @@
-# unisign example
+# uni-sign example
 
-unisign usage example with Nextjs
+[uni-sign](https://github.com/cosmology-tech/uni-sign) usage example with Nextjs
 
 Run
 
