@@ -4,7 +4,7 @@ import { Message, TxRaw } from "@uni-sign/cosmos/types";
 import { getPrefix, toConverter, toEncoder } from "@uni-sign/cosmos/utils";
 import { AminoSigner } from "@uni-sign/cosmos/amino";
 import { MsgSend } from "@uni-sign/cosmos-msgs/cosmos/bank/v1beta1/tx";
-import { toWallet } from "../utils/amino";
+import { toAminoWallet } from "@cosmology/cosmjs/utils";
 import { toHex } from "@uni-sign/utils";
 
 const CHAIN_ID = "cosmoshub-4";
@@ -68,7 +68,7 @@ export default () => {
     // );
     const fn = async () => {
       const signer = await AminoSigner.fromWallet(
-        toWallet(offlineSigner, CHAIN_ID),
+        toAminoWallet(offlineSigner as any, CHAIN_ID),
         encodes,
         converters,
         RPC

@@ -2,6 +2,19 @@
 # yarn lockfile v1
 
 
+"@cosmology/cosmjs@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@cosmology/cosmjs/-/cosmjs-0.0.2.tgz#52cd359f4ea97e0d47808fd712bb512f2eece09b"
+  integrity sha512-1CZfSIDS4lng4TpR+n2h6Dg0czgtgG4JYH1WJ4EkPivWp4t8aAw6FSAnSSDRlSoiZ0oxhvzH5oiuM6vF1f8JBg==
+  dependencies:
+    "@noble/hashes" "^1.3.1"
+    "@uni-sign/cosmos" "^0.0.1"
+    "@uni-sign/cosmos-msgs" "^0.0.1"
+    "@uni-sign/cosmos-query" "^0.0.1"
+    "@uni-sign/types" "^0.0.1"
+    "@uni-sign/utils" "^0.0.1"
+    decimal.js "^10.4.3"
+
 "@keplr-wallet/types@^0.12.74":
   version "0.12.74"
   resolved "https://registry.npmjs.org/@keplr-wallet/types/-/types-0.12.74.tgz#50cd8a329cedbf16b291c5f95844a3ce67100bb0"
@@ -108,6 +121,14 @@
   version "0.0.1"
   resolved "https://registry.npmjs.org/@uni-sign/cosmos-msgs/-/cosmos-msgs-0.0.1.tgz#33fd9333b8da1166c8eea1e765c4c904b6008c8f"
   integrity sha512-WkOs25TK1fNRSYvteE8eP6iR8zCyyUhbYA/AEC7oMGCo9qiCK55QU96v0o4hG2mv8eV7/lbJtCebza17hGZNLA==
+
+"@uni-sign/cosmos-query@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@uni-sign/cosmos-query/-/cosmos-query-0.0.1.tgz#e56e7ef9cf613aca734fc92d40327959e09d8471"
+  integrity sha512-4FptUBMfzKxkgwzCHW9qburRyPW06kAf3Sykag0sd2arMoRvWuaWtRLEHuRVqdttC9i8n120bJk/sq3qYajqUw==
+  dependencies:
+    "@uni-sign/types" "^0.0.1"
+    "@uni-sign/utils" "^0.0.1"
 
 "@uni-sign/cosmos@^0.0.1":
   version "0.0.1"

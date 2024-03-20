@@ -11,6 +11,7 @@
     "dev": "next dev"
   },
   "dependencies": {
+    "@cosmology/cosmjs": "^0.0.2",
     "@keplr-wallet/types": "^0.12.74",
     "@uni-sign/cosmos": "^0.0.1",
     "@uni-sign/cosmos-msgs": "^0.0.1",
